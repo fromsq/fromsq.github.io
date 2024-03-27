@@ -1,0 +1,437 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior:smooth ;
+}  
+  body {
+   /* background:#8fafd0; */
+   /* height: 600vh; */
+   display: grid;
+   grid-template-rows: auto 1fr auto;
+}  
+#Accueil {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background: url('images/Gwen1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+    z-index: 99;
+}
+
+.container-first {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 100px;
+    color: #94f7e6;
+    font-family: Abril fatface, sans-serif;
+    text-shadow: 3px 3px 8px rgb(14, 59, 193);
+}
+h1 span {
+    position: relative;
+}
+.container-btns {
+    position: relative;
+    top: 50px;
+}
+.btn-first {
+    border: 2px solid #94f7e6;
+    outline: none;
+    background: transparent;
+    background-color: rgba(109, 109, 144, 0.934);
+    font-size: 30px;
+    padding: 20px;
+    width: 300px;
+    color: #94f7e6;
+    cursor: pointer;
+}
+.btn-first:nth-child(1){
+    margin-right: 30px;
+}
+.btn-first:hover {
+    transition: all 0.3s ease-in-out;
+    background: #94f7e6; 
+    color: #333;
+}
+.lignes {
+    position: absolute;
+    top: 6%;
+    left: 5%;
+}
+.l1 {
+    width: 250px;
+    height: 3px;
+    background: #94f7e6;
+    border-radius: 5px;
+}
+.l2 {
+    width: 140px;
+    height: 3px;
+    background: #94f7e6;
+    border-radius: 5px;
+    position: relative;
+    top: 20px;
+}
+
+.logo {
+    position: absolute;
+    right: 1.9%;
+    top: 4%;
+    width: 350px;
+    height: auto;
+    cursor: pointer;
+}
+.medias {
+    list-style-type: none;
+    position: absolute;
+    right: 3.3%;
+    top: 70%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bulle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #94f7e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    background: #94f7e6;
+    cursor: pointer;
+    position: relative;
+}
+
+.logo-medias {
+    width: 40px;
+    height: 40px;
+}
+ /* tete de page*/
+ header.header {
+	display: flex;
+	align-items: center;
+}
+header.header img {
+	width: 150px;
+}
+section.Decouvrir {
+    height: 100vh;
+}
+/* menu de navigation */
+nav.nav {
+    /* background:transparent; */
+    background-color: rgba(109, 109, 144, 0.934);
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top: -90px ;
+    transition: 0.4s;
+    z-index: 90;
+}
+ul {	
+	display:flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+	list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-style: none;
+	 /* width: 500px;
+	margin-left: 30px;	   */
+}
+a {
+    text-decoration: none;
+}
+nav.nav a{
+	color: #94f7e6;
+    /*color: rgba(109, 109, 144, 0.934);*/
+}
+/*card */
+.photo1, .photo3 {
+    width: 8em;
+    width: 8em;
+    border-radius: 50px;
+    border: 2px solid beige;
+    position: relative;
+    top: 30px;
+}
+.photo2 {
+    width: 9em;
+    width: 10em;
+    border-radius: 50px;
+    border: 2px solid beige;
+    position: relative;
+    top: 30px;
+}
+
+.card1, .card2, .card3 {
+    box-shadow: 0 4px 8px grey;
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+.card1:hover {
+    box-shadow: 0 4px 8px rgb(64, 60, 255);
+}
+.card2:hover {
+    box-shadow: 0 4px 8px rgb(64, 60, 255);
+} 
+.card3:hover {
+    box-shadow: 0 4px 8px rgb(64, 60, 255);
+}
+.container {
+    margin-top: 15%;
+    margin-right: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    /* background-color: rgb(46, 108, 146) ; */
+    height: 100vh;
+}
+.card-top {
+    background-color: rgba(109, 109, 144, 0.934);
+    text-align: center;
+    height: 20%;
+    border-radius: 5px 5px 0 0;
+}
+.card-info {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding:0 1em 0 1em ;
+}
+.nom {
+    color: rgb(90, 90, 90);
+}
+.nom3{
+    color: rgb(90, 90, 90);
+    padding-top: 40px;
+}
+.job {
+    margin: 0.8em;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color:rgb(109, 109, 144, 0.934);
+}
+.quote {
+    text-align: center;
+    margin-top: 2em;
+    color: rgb(121,121,121);
+    font-family: Georgia,'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 0.9em;
+}
+.button {
+    margin-top: 1em;
+    text-align: center;
+}
+button {
+    border: 2px solid rgba(109, 109, 144, 0.934);
+    border-radius: 5px;
+    background:white;
+    color:rgba(109, 109, 144, 0.934);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+button:hover {
+    background: rgba(109, 109, 144, 0.934);
+    color:white;
+}
+/* les marchés */
+.station {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+.localisation {
+    padding:100px ;
+    background: rgba(109, 109, 144, 0.934);
+}
+ /* .localisation ifram {
+    width: 300px; 
+} */
+.marches-info {
+    margin-top: 20px;
+    padding: 20px;
+    line-height: 30px; 
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+ .marches-info hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 0.5;
+}
+.address {
+    display: flex;  
+    margin: 20px;
+    background-color: #fff;
+    
+}
+/*tarifs*/
+.tarifs{
+    height: 100vh;
+    padding-top: 90px;
+     
+}
+.tbtarif{
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+.tb1 {
+    margin: 100px;
+    line-height: 40px; 
+}
+.tb2 {
+    margin: 100px;
+    line-height: 40px; 
+}
+.tarifs hr {
+    margin: 100px;
+    color: rgba(109, 109, 144, 0.934);
+    border: 1px solid rgba(109, 109, 144, 0.934);
+}
+td, .col1, .col2 {
+    text-align: start;
+    padding-left: 60px;
+}
+.col1, .col2 {
+    font-size: 22px;
+    color: rgba(109, 109, 144, 0.934);
+}
+/* .col1{
+    padding-right: 50px;
+} */
+.autre1 {
+    font-size: 30xp;
+    text-align: center;
+    padding-left: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(109, 109, 144, 0.934);
+}
+
+
+/*formulaire de contact */
+
+ /* #Contact {
+    /* margin-top: 5%;
+    margin-right: 0;
+    padding: 0; 
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #4989c2 ;
+} */
+.contacter {
+    display: flex;
+    height: 90vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    align-items: center;
+    background-color: #4989c2 ;
+   
+}
+.photomail{
+	margin-top: 10px;
+	width: 950px;
+	height: 650px; 
+	/*margin-right: 250px;*/
+}
+.form {
+	/* position: relative; */
+	/* margin-top: 20px;
+	 margin-right: 500px; */
+    padding-top: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 10px;
+	font-size: 25px;
+	background-color: #4989c2 ;
+}
+
+input {
+	height: 40px;
+ 	width: 300px;
+	line-height: 40px;
+	padding:5px;
+}
+select {	
+	height: 40px;
+ 	width: auto px;
+	line-height: 40px;
+	padding:5px;	
+}
+#selection { 
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+#entrernom {
+    font-size: 20px;
+    border-radius: 10px;
+}
+#entrerprenom {
+	font-size: 20px;
+    border-radius: 10px;
+}
+#entrertel {
+	font-size: 20px;
+    border-radius: 10px;
+}
+#entrermail {
+	font-size: 20px;
+	margin-bottom: 30px;
+    border-radius: 10px;
+}
+#message {
+    font-size: 20px;
+	margin-bottom: 20px;
+    border-radius: 10px;	
+}
+
+#boutn {
+	font-size: 20px;
+    padding: 6px 30px;
+	margin-left: 370px;
+	margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+
+
+/* footer */
+footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(109, 109, 144, 0.934);
+    color: #94f7e6;
+    font-size: 22px;
+    text-align: center;
+    padding: 20px;
+}
